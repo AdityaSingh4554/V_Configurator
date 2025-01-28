@@ -1,0 +1,124 @@
+/* src/App.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #6a6d61;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+  z-index: 5;
+  margin: 0;
+  margin-top: 0; /* Ensure no space between header and navbar */
+  width: calc(100% - 200px);  /* Adjust navbar width to fill remaining space */
+  margin-left: 200px;  /* Start navbar after sidebar */
+  display: flex;
+  justify-content: center; /* Center content inside navbar */
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Add spacing between links */
+}
+
+.nav-list li {
+  padding: 5px 10px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-list a:hover {
+  color: #007bff;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px; /* Starts after the header */
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers sidebar items horizontally */
+  justify-content: flex-start; /* Adjust this as needed */
+  padding-top: 100px; /* Adds more space at the top of the sidebar */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  color: #007bff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 220px; /* Space for Sidebar */
+  padding: 20px;
+  flex: 1;
+  margin-top: 20px;  /* Space for navbar */
+  z-index: 1;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .navbar {
+    margin-left: 0;
+    width: 100%;
+  }
+}

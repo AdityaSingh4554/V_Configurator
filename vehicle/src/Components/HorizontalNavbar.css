@@ -1,0 +1,31 @@
+/* src/Components/HorizontalNavbar.css */
+.navbar {
+  background-color: #343a40; /* Dark background for Navbar */
+  color: white;
+  padding: 15px;
+  position: relative;
+  z-index: 10;
+  margin-top: 60px; /* Add space below the header */
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center; /* Center the navbar items */
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  font-size: 18px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+  text-decoration: underline;
+}

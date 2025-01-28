@@ -1,0 +1,35 @@
+/* src/Components/Sidebar.css */
+.sidebar {
+  position: fixed;
+  top: 80px; /* Make space for the Navbar */
+  left: 0;
+  height: calc(100% - 80px); /* Adjust for the Navbar height */
+  width: 200px;
+  background-color: #333;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list li {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.sidebar-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+.sidebar-list li a:hover {
+  background-color: #575757;
+  padding: 10px;
+  border-radius: 4px;
+}
